@@ -34,7 +34,6 @@ class Solution {
       }
       lineWordFrequencies[i + 1] = wordCount;
 
-      // int highestFrequency = wordCount.values.reduce((a, b) => a > b ? a : b);
       int highestFrequency = 0;
       for (int frequency in wordCount.values) {
         if (frequency > highestFrequency) {
