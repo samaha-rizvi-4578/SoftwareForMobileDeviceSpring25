@@ -1,5 +1,5 @@
 # SoftwareForMobileDeviceSpring25
-this repo wil contain all our lab tasks and assignments for software for mobile device course
+this repo wil contain all Lab Tasks... Assignmetns etc will be in seperate repo
 
 
 ## Todo List SS
