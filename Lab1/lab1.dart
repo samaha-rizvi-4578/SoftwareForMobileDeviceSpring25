@@ -8,6 +8,17 @@ main() {
 }
 
 class Solution {
+ 
+ void analyzeFile(){
 
+ }
+
+ void calculateLineWithHighestFrequency(){
+
+ }
+
+ void printHighestWordFrequencyAcrossLines(){
+
+ }
 
 }
