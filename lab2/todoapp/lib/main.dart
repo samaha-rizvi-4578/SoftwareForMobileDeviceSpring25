@@ -97,12 +97,40 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void addTask() {
-    setState(() {
-      var title = 'New Task $_counter';
-      tasks.add({"title": title, "isCompleted": false});
-      _counter++;
-    });
-  }
+  TextEditingController taskController = TextEditingController();
+  showDialog(
+    context: context, 
+    builder: (context) {
+      return AlertDialog(
+        title: const Text("Add Task"),
+        content: TextField(
+          controller: taskController,
+          decoration: const InputDecoration(labelText: "Task Title"),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text("Cancel"),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              if (taskController.text.trim().isNotEmpty) {
+                setState(() {
+                  tasks.add({
+                    "title": taskController.text,
+                    "isCompleted": false,
+                  });
+                });
+                Navigator.pop(context);  // ✅ Moved outside setState
+              }
+            },
+            child: const Text("Add"),
+          ),
+        ],
+      );
+    },
+  );
+}
 
   @override
   Widget build(BuildContext context) {
