@@ -57,22 +57,25 @@ class LandscapeWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Landscape View')),
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Expanded(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: _buildList(list1),
+      body: FittedBox(
+        fit: BoxFit.contain, // Ensures content scales to fit within available space
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Expanded(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: _buildList(list1),
+              ),
             ),
-          ),
-          Expanded(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: _buildList(list2),
+            Expanded(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: _buildList(list2),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
