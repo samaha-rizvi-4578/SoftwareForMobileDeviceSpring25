@@ -2,11 +2,14 @@
 this repo wil contain all Lab Tasks... Assignmetns etc will be in seperate repo
 
 
-## Todo List SS
+# Activities details
 
-home page
-![alt text](image.png)
-delete a task
-![alt text](image-1.png)
-add new task just increemtning counter
-![alt text](image-2.png)
+## Lab 1:
+filing in dart
+
+## Lab 2:
+to do list implementation
+
+## Lab 3:
+to do app with custom widgets
+assignment  ( user icon and drawer ) responsiveness

@@ -13,6 +13,12 @@ k213219	Muhammad Umer
 - add a new task
 - delete and existing task
 
+# screenshots
+![alt text](image.png)
+![edit task](image-1.png)
+![delete task](image-2.png)
+![add task](image-3.png)
+![check new item](image-4.png)
 ## Getting Started
 
 This project is a starting point for a Flutter application.
