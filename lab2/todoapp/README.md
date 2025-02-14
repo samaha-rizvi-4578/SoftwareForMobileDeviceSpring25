@@ -1,6 +1,17 @@
 # todoapp
 
-A new Flutter project.
+Class Activity no 2 -> ToDoApp 
+
+## group members:
+k214503 Muhammad Tahir
+K213279	Insha Javed
+K214578	Samaha Batool
+k213219	Muhammad Umer
+
+## Features
+- check box for complete and incomplte tasks
+- add a new task
+- delete and existing task
 
 ## Getting Started
 
