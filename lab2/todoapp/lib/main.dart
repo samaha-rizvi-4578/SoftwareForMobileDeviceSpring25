@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'To-Do List',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 7, 89, 61)),
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'To-Do List HomePage'),
@@ -30,7 +30,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+
 
   List<Map<String, dynamic>> tasks = [
     {"title": "Complete Flutter Setup", "isCompleted": true},
@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void toggleTask(int index) {
     setState(() {
-      tasks[index]["isCompleted"] = !tasks[index]["isCompleted"];
+      tasks[index]["isCompleted"] = !tasks[index]["isCompleted"]; // "!" sign indicates not gate
     });
   }
 
@@ -121,7 +121,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     "isCompleted": false,
                   });
                 });
-                Navigator.pop(context);  // ✅ Moved outside setState
+                Navigator.pop(context);  
               }
             },
             child: const Text("Add"),
