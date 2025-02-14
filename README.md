@@ -1,12 +1,13 @@
 # SoftwareForMobileDeviceSpring25
-this repo wil contain all Lab Tasks... Assignmetns etc will be in seperate repo
+this repo wil contain all Lab Tasks (class activities)
+
 
 
 ## group members:
-k214503 Muhammad Tahir
-K213279	Insha Javed
-K214578	Samaha Batool
-k213219	Muhammad Umer
+### k214503 Muhammad Tahir
+### K213279	Insha Javed
+### K214578	Samaha Batool
+### k213219	Muhammad Umer
 
 # Activities details
 
